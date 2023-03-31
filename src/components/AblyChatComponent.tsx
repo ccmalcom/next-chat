@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useChannel } from "./AblyReactEffect";
 import styles from './AblyChatComponent.module.css';
-import Ably from 'ably';
+import Ably from 'ably/promises';
+
 
 const AblyChatComponent = (): JSX.Element => {
     let inputBox: HTMLTextAreaElement | null = null;
